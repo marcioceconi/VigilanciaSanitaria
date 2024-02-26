@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imagens/icon-add.png</file>
+        <file>imagens/icon-add-folder.png</file>
+        <file>imagens/icon-address.png</file>
+        <file>imagens/icon-checked-circle.png</file>
+        <file>imagens/icon-checked-square.png</file>
+        <file>imagens/icon-checklist.png</file>
+        <file>imagens/icon-clean.png</file>
+        <file>imagens/icon-code.png</file>
+        <file>imagens/icon-code-folder.png</file>
+        <file>imagens/icon-contacts.png</file>
+        <file>imagens/icon-copy.png</file>
+        <file>imagens/icon-cut.png</file>
+        <file>imagens/icon-delete-file.png</file>
+        <file>imagens/icon-document.png</file>
+        <file>imagens/icon-edit-file.png</file>
+        <file>imagens/icon-find.png</file>
+        <file>imagens/icon-folder.png</file>
+        <file>imagens/icon-new-file.png</file>
+        <file>imagens/icon-paste.png</file>
+        <file>imagens/icon-pdf.png</file>
+        <file>imagens/icon-print.png</file>
+        <file>imagens/icon-quit.png</file>
+        <file>imagens/icon-redo.png</file>
+        <file>imagens/icons8-undo-96.png</file>
+        <file>imagens/icon-save.png</file>
+        <file>imagens/icon-settings.png</file>
+        <file>imagens/icon-sort-down.png</file>
+        <file>imagens/icon-sort-up.png</file>
+        <file>imagens/icon-qt-creator.png</file>
+        <file>imagens/icon-ok-empty.png</file>
+        <file>imagens/icon-checked-square-green.png</file>
+        <file>imagens/logotipo.png</file>
+        <file>imagens/RadShield-Ico.ico</file>
+        <file>imagens/RadShield-Png.png</file>
+    </qresource>
+</RCC>

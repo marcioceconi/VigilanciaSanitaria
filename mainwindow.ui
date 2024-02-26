@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Vigilância Sanitária</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/imagens/RadShield-Ico.ico</normaloff>:/imagens/RadShield-Ico.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="centralScrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>780</width>
+         <height>503</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <widget class="QMenu" name="menuRelat_rio_de_Inspe_o">
+     <property name="title">
+      <string>Relatório de Inspeção</string>
+     </property>
+     <addaction name="actionRelatorioHemodinamica"/>
+     <addaction name="actionRelatorioMedicinaNuclear"/>
+     <addaction name="actionRelatorioRadiologiaMedica"/>
+     <addaction name="actionRelatorioRadiologiaOdontologica"/>
+     <addaction name="actionRelatorioRadioterapia"/>
+    </widget>
+    <widget class="QMenu" name="menuProcesso_Administrativo_Sanit_rio">
+     <property name="title">
+      <string>Processo Adm. Sanitário</string>
+     </property>
+     <widget class="QMenu" name="menuDocumento_Em_Branco_Anexos_da_Portaria_SES_n_50_2017">
+      <property name="title">
+       <string>Documento Em Branco</string>
+      </property>
+      <addaction name="actionBrancoAutoInfracaoRitoSumarissimo"/>
+      <addaction name="separator"/>
+      <addaction name="actionBrancoAutoInfracaoRitoAnaliseFiscal"/>
+      <addaction name="actionBrancoTermoColetaAmostras"/>
+      <addaction name="separator"/>
+      <addaction name="actionBrancoTermoInterdicaoCautelarEstabelecimentos"/>
+      <addaction name="actionBrancoTermoInterdicaoCautelarProdutos"/>
+      <addaction name="actionBrancoTermoInterdicaoCautelarProdutosSemAutuacao"/>
+      <addaction name="actionBrancoTermoInutilizacaoImediataProdutos"/>
+      <addaction name="separator"/>
+      <addaction name="actionBrancoTermoDesinterdicaoEstabelecimentos"/>
+      <addaction name="actionBrancoTermoDesinterdicaoProdutos"/>
+      <addaction name="separator"/>
+      <addaction name="actionBrancoNotificacaoImposicaoPenalidadeProcedenciaAutuacao"/>
+      <addaction name="actionBrancoNotificacaoImposicaoPenalidadeParcialProcedenciaAutuacao"/>
+      <addaction name="actionBrancoNotificacaoImposicaoPenaMulta"/>
+      <addaction name="separator"/>
+      <addaction name="actionBrancoNotificacaoDesprovimentoRecurso"/>
+      <addaction name="actionBrancoNotificacaoParcialProvimentoRecurso"/>
+      <addaction name="separator"/>
+      <addaction name="actionBrancoNotificacaoDecisaoFinal"/>
+      <addaction name="actionBrancoNotificacaoPagamentoMultaAposDecisaoFinal"/>
+      <addaction name="actionBrancoTermoApreensaoInutilizacaoAposDecisaoFinal"/>
+     </widget>
+     <addaction name="menuDocumento_Em_Branco_Anexos_da_Portaria_SES_n_50_2017"/>
+     <addaction name="separator"/>
+     <addaction name="actionPASAutoInfracaoRitoSumarissimo"/>
+     <addaction name="separator"/>
+     <addaction name="actionPASAutoInfracaoRitoAnaliseFiscal"/>
+     <addaction name="actionPASTermoColetaAmostras"/>
+     <addaction name="separator"/>
+     <addaction name="actionPASTermoInterdicaoCautelarEstabelecimentos"/>
+     <addaction name="actionPASTermoInterdicaoCautelarProdutos"/>
+     <addaction name="actionPASTermoInterdicaoCautelarProdutosSemAutuacao"/>
+     <addaction name="actionPASTermoInutilizacaoImediataProdutos"/>
+     <addaction name="separator"/>
+     <addaction name="actionPASTermoDesinterdicaoEstabelecimentos"/>
+     <addaction name="actionPASTermoDesinterdicaoProdutos"/>
+     <addaction name="separator"/>
+     <addaction name="actionPASNotificacaoImposicaoPenalidadeProcedenciaAutuacao"/>
+     <addaction name="actionPASNotificacaoImposicaoPenalidadeParcialProcedenciaAutuacao"/>
+     <addaction name="actionPASNotificacaoImposicaoPenaMulta"/>
+     <addaction name="separator"/>
+     <addaction name="actionPASNotificacaoDesprovimentoRecurso"/>
+     <addaction name="actionPASNotificacaoParcialProvimentoRecurso"/>
+     <addaction name="separator"/>
+     <addaction name="actionPASNotificacaoDecisaoFinal"/>
+     <addaction name="actionPASNotificacaoPagamentoMultaAposDecisaoFinal"/>
+     <addaction name="actionPASTermoApreensaoInutilizacaoAposDecisaoFinal"/>
+    </widget>
+    <addaction name="menuRelat_rio_de_Inspe_o"/>
+    <addaction name="menuProcesso_Administrativo_Sanit_rio"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalvar"/>
+    <addaction name="separator"/>
+    <addaction name="actionSair"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+    <addaction name="actionDesfazer"/>
+    <addaction name="actionRefazer"/>
+    <addaction name="separator"/>
+    <addaction name="actionRecortar"/>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionColar"/>
+   </widget>
+   <widget class="QMenu" name="menuCadastros">
+    <property name="title">
+     <string>Cadastro</string>
+    </property>
+    <addaction name="actionCadastroEstabelecimentos"/>
+    <addaction name="actionCadastroVigilanciaSanitaria"/>
+   </widget>
+   <widget class="QMenu" name="menuConfigura_es">
+    <property name="title">
+     <string>Configurações</string>
+    </property>
+    <addaction name="actionAlterarIcones"/>
+   </widget>
+   <widget class="QMenu" name="menuSobre">
+    <property name="title">
+     <string>Sobre</string>
+    </property>
+    <addaction name="actionSobre"/>
+    <addaction name="actionLicenca"/>
+    <addaction name="separator"/>
+    <addaction name="actionSobreQt"/>
+   </widget>
+   <widget class="QMenu" name="menuC_lculo_de_Blindagem">
+    <property name="title">
+     <string>Cálculo de Blindagem</string>
+    </property>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuCadastros"/>
+   <addaction name="menuC_lculo_de_Blindagem"/>
+   <addaction name="menuConfigura_es"/>
+   <addaction name="menuSobre"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBarPrincipal">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="toolBarSalvar">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSalvar"/>
+  </widget>
+  <widget class="QToolBar" name="toolBarSair">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionDesfazer"/>
+   <addaction name="actionRefazer"/>
+   <addaction name="separator"/>
+   <addaction name="actionRecortar"/>
+   <addaction name="actionCopiar"/>
+   <addaction name="actionColar"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSair"/>
+  </widget>
+  <action name="actionSobre">
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="actionSobreQt">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-qt-creator.png</normaloff>:/imagens/icon-qt-creator.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sobre o Qt</string>
+   </property>
+  </action>
+  <action name="actionLicenca">
+   <property name="text">
+    <string>Licença</string>
+   </property>
+  </action>
+  <action name="actionSair">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-quit.png</normaloff>:/imagens/icon-quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionRelatorioRadiologiaMedica">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-new-file.png</normaloff>:/imagens/icon-new-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Radiologia Médica</string>
+   </property>
+   <property name="toolTip">
+    <string>Relatório de Inspeção em Radiologia Médica</string>
+   </property>
+  </action>
+  <action name="actionRelatorioRadiologiaOdontologica">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-new-file.png</normaloff>:/imagens/icon-new-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Radiologia Odontológica</string>
+   </property>
+   <property name="toolTip">
+    <string>Relatório de Inspeção em Radiologia Odontológica</string>
+   </property>
+  </action>
+  <action name="actionRelatorioRadioterapia">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-new-file.png</normaloff>:/imagens/icon-new-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Radioterapia</string>
+   </property>
+   <property name="toolTip">
+    <string>Relatório de Inspeção em Radioterapia</string>
+   </property>
+  </action>
+  <action name="actionRelatorioMedicinaNuclear">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-new-file.png</normaloff>:/imagens/icon-new-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Medicina Nuclear</string>
+   </property>
+   <property name="toolTip">
+    <string>Relatório de Inspeção em Medicina Nuclear</string>
+   </property>
+  </action>
+  <action name="actionPASAutoInfracaoRitoSumarissimo">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Auto de Infração Sanitária - Rito Sumaríssimo</string>
+   </property>
+  </action>
+  <action name="actionPASAutoInfracaoRitoAnaliseFiscal">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Auto de Infração Sanitária - Rito de Análise Fiscal</string>
+   </property>
+  </action>
+  <action name="actionRecortar">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-cut.png</normaloff>:/imagens/icon-cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recortar</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-copy.png</normaloff>:/imagens/icon-copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </action>
+  <action name="actionColar">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-paste.png</normaloff>:/imagens/icon-paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Colar</string>
+   </property>
+  </action>
+  <action name="actionDesfazer">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icons8-undo-96.png</normaloff>:/imagens/icons8-undo-96.png</iconset>
+   </property>
+   <property name="text">
+    <string>Desfazer</string>
+   </property>
+  </action>
+  <action name="actionRefazer">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-redo.png</normaloff>:/imagens/icon-redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Refazer</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-save.png</normaloff>:/imagens/icon-save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </action>
+  <action name="actionPASTermoInterdicaoCautelarEstabelecimentos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Interdição Cautelar de Estabelecimentos</string>
+   </property>
+  </action>
+  <action name="actionPASTermoInterdicaoCautelarProdutos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Interdição Cautelar de Produtos ou Substâncias</string>
+   </property>
+  </action>
+  <action name="actionPASTermoInterdicaoCautelarProdutosSemAutuacao">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Interdição Cautelar de Produtos ou Substâncias Sem Autuação (Por Decisão da DVS/CEVS)</string>
+   </property>
+   <property name="toolTip">
+    <string>Termo de Interdição Cautelar de Produtos ou Substâncias Sem Autuação (Por Decisão da DVS/CEVS)</string>
+   </property>
+  </action>
+  <action name="actionPASTermoDesinterdicaoEstabelecimentos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo Vinculado de Desinterdição de Estabelecimentos</string>
+   </property>
+  </action>
+  <action name="actionPASTermoDesinterdicaoProdutos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo Vinculado de Desinterdição de Produtos ou Substâncias</string>
+   </property>
+  </action>
+  <action name="actionPASTermoInutilizacaoImediataProdutos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Inutilização Imediata de Produtos (com Laudo Pericial)</string>
+   </property>
+  </action>
+  <action name="actionPASNotificacaoImposicaoPenalidadeProcedenciaAutuacao">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Imposição de Penalidade - Procedência da Autuação (Julgamento em Primeira Instância)</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação de Imposição de Penalidade - Procedência da Autuação (Julgamento em Primeira Instância)</string>
+   </property>
+  </action>
+  <action name="actionPASNotificacaoImposicaoPenalidadeParcialProcedenciaAutuacao">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Imposição de Penalidade - Parcial Procedência da Autuação (Julgamento em Primeira Instância)</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação de Imposição de Penalidade - Parcial Procedência da Autuação (Julgamento em Primeira Instância)</string>
+   </property>
+  </action>
+  <action name="actionPASNotificacaoImposicaoPenaMulta">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Imposição de Pena de Multa (Julgamento em Primeira Instância)</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação de Imposição de Pena de Multa (Julgamento em Primeira Instância)</string>
+   </property>
+  </action>
+  <action name="actionPASNotificacaoDesprovimentoRecurso">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Desprovimento de Recurso (Julgamento em Segunda Instância)</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação de Desprovimento de Recurso (Julgamento em Segunda Instância)</string>
+   </property>
+  </action>
+  <action name="actionPASNotificacaoParcialProvimentoRecurso">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Parcial Provimento de Recurso (Julgamento em Segunda Instância)</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação de Parcial Provimento de Recurso (Julgamento em Segunda Instância)</string>
+   </property>
+  </action>
+  <action name="actionPASNotificacaoDecisaoFinal">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Decisão Final</string>
+   </property>
+  </action>
+  <action name="actionPASNotificacaoPagamentoMultaAposDecisaoFinal">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação para Pagamento de Multa Após Decisão Final</string>
+   </property>
+  </action>
+  <action name="actionPASTermoApreensaoInutilizacaoAposDecisaoFinal">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Apreensão e Inutilização Após Decisão Final</string>
+   </property>
+  </action>
+  <action name="actionPASTermoColetaAmostras">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Coleta de Amostras - Rito de Análise Fiscal</string>
+   </property>
+   <property name="toolTip">
+    <string>Termo de Coleta de Amostras - Rito de Análise Fiscal</string>
+   </property>
+  </action>
+  <action name="actionCadastroEstabelecimentos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-address.png</normaloff>:/imagens/icon-address.png</iconset>
+   </property>
+   <property name="text">
+    <string>Estabelecimentos</string>
+   </property>
+  </action>
+  <action name="actionCadastroVigilanciaSanitaria">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-contacts.png</normaloff>:/imagens/icon-contacts.png</iconset>
+   </property>
+   <property name="text">
+    <string>Vigilância Sanitária (CEVS/CRS/Município)</string>
+   </property>
+  </action>
+  <action name="actionRelatorioHemodinamica">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-new-file.png</normaloff>:/imagens/icon-new-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hemodinâmica</string>
+   </property>
+   <property name="toolTip">
+    <string>Relatório de Inspeção em Hemodinâmica</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBrancoAutoInfracaoRitoSumarissimo">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Auto de Infração Sanitária - Rito Sumaríssimo</string>
+   </property>
+  </action>
+  <action name="actionBrancoAutoInfracaoRitoAnaliseFiscal">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Auto de Infração Sanitária - Rito de Análise Fiscal</string>
+   </property>
+   <property name="toolTip">
+    <string>Auto de Infração Sanitária - Rito de Análise Fiscal</string>
+   </property>
+  </action>
+  <action name="actionBrancoTermoColetaAmostras">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Coleta de Amostras - Rito de Análise Fiscal</string>
+   </property>
+  </action>
+  <action name="actionBrancoTermoInterdicaoCautelarEstabelecimentos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Interdição Cautelar de Estabelecimentos</string>
+   </property>
+  </action>
+  <action name="actionBrancoTermoInterdicaoCautelarProdutos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Interdição Cautelar de Produtos ou Substâncias</string>
+   </property>
+   <property name="toolTip">
+    <string>Termo de Interdição Cautelar de Produtos ou Substâncias</string>
+   </property>
+  </action>
+  <action name="actionBrancoTermoInterdicaoCautelarProdutosSemAutuacao">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Interdição Cautelar de Produtos ou Substâncias Sem Auutação (Por Decisão da DVS/CEVS)</string>
+   </property>
+  </action>
+  <action name="actionBrancoTermoInutilizacaoImediataProdutos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Inutilização Imediata de Produtos (com Laudo Pericial)</string>
+   </property>
+  </action>
+  <action name="actionBrancoTermoDesinterdicaoEstabelecimentos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo Vinculado de Desinterdição de Estabelecimentos</string>
+   </property>
+   <property name="toolTip">
+    <string>Termo Vinculado de Desinterdição de Estabelecimentos</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBrancoTermoDesinterdicaoProdutos">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo Vinculado de Desinterdição de Produtos ou Substâncias</string>
+   </property>
+   <property name="toolTip">
+    <string>Termo Vinculado de Desinterdição de Produtos ou Substâncias</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBrancoNotificacaoImposicaoPenalidadeProcedenciaAutuacao">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Imposição de Penalidade - Procedência da Autuação (Julgamento em Primeira Instância)</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação de Imposição de Penalidade - Procedência da Autuação (Julgamento em Primeira Instância)</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBrancoNotificacaoImposicaoPenalidadeParcialProcedenciaAutuacao">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Imposição de Penalidade - Parcial Procedência da Autuação (Julgamento em Primeira Instância)</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação de Imposição de Penalidade - Parcial Procedência da Autuação (Julgamento em Primeira Instância)</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBrancoNotificacaoImposicaoPenaMulta">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Imposição de Pena de Multa (Julgamento em Primeira Instância)</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação de Imposição de Pena de Multa (Julgamento em Primeira Instância)</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBrancoNotificacaoDesprovimentoRecurso">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Desprovimento de Recurso (Julgamento em Segunda Instância)</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação de Desprovimento de Recurso (Julgamento em Segunda Instância)</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBrancoNotificacaoParcialProvimentoRecurso">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Parcial Provimento de Recurso (Julgamento em Segunda Instância)</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação de Parcial Provimento de Recurso (Julgamento em Segunda Instância)</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBrancoNotificacaoDecisaoFinal">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação de Decisão Final</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação de Decisão Final</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBrancoNotificacaoPagamentoMultaAposDecisaoFinal">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Notificação para Pagamento de Multa Após Decisão Final</string>
+   </property>
+   <property name="toolTip">
+    <string>Notificação para Pagamento de Multa Após Decisão Final</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBrancoTermoApreensaoInutilizacaoAposDecisaoFinal">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-edit-file.png</normaloff>:/imagens/icon-edit-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Termo de Apreensão e Inutilização Após Decisão Final</string>
+   </property>
+   <property name="toolTip">
+    <string>Termo de Apreensão e Inutilização Após Decisão Final</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAlterarIcones">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-settings.png</normaloff>:/imagens/icon-settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Alterar Ícones</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
