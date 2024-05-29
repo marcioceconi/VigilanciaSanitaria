@@ -41,3 +41,7 @@ void CustomCheckBox::atualizaEstado(bool entrada)
     ui->labelText->setText(QString("Mouse-Event: %1").arg(!entrada));
 }
 
+QString CustomCheckBox::readLabelTexto()
+{
+    return (ui->labelText->text());
+}

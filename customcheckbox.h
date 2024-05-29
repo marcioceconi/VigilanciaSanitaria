@@ -18,6 +18,7 @@ public:
 
     void alteraTexto(QString texto);
     bool getCheckState();
+    QString readLabelTexto();
 
 private:
     Ui::CustomCheckBox *ui;

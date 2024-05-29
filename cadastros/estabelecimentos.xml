@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<cadastro>
+
+<estabelecimento cpf-cnpj="" cnes="" razao-social="" nome-fantasia="">
+    <endereco>
+        <logradouro></logradouro>
+        <numero></numero>
+        <bairro></bairro>
+        <complemento></complemento>
+        <municipio></municipio>
+        <cep></cep>
+        <telefone></telefone>
+        <email></email>
+    </endereco>
+    <servico tipo="">
+        <alvara-sanitario>
+            <protocolo></protocolo>
+            <codigo-cevs></codigo-cevs>
+            <validade></validade>
+            <qr-code></qr-code>
+        </alvara-sanitario>
+        <responsavel-legal>
+            <nome></nome>
+            <cpf></cpf>
+        </responsavel-legal>
+        <responsavel-tecnico>
+            <nome></nome>
+            <cpf></cpf>
+            <registro-profissional></registro-profissional>
+        </responsavel-tecnico>
+        <responsavel-tecnico-substituto>
+            <nome></nome>
+            <cpf></cpf>
+            <registro-profissional></registro-profissional>
+        </responsavel-tecnico-substituto>
+        <supervisor-protecao-radiologica>
+            <nome></nome>
+            <cpf></cpf>
+            <registro-profissional></registro-profissional>
+            <registro-cnen>
+                <registro></registro>
+                <credenciamento></credenciamento>
+                <renovacao></renovacao>
+                <validade></validade>
+            </registro-cnen>
+        </supervisor-protecao-radiologica>
+        <supervisor-protecao-radiologica-substituto>
+            <nome></nome>
+            <cpf></cpf>
+            <registro-profissional></registro-profissional>
+            <registro-cnen>
+                <registro></registro>
+                <credenciamento></credenciamento>
+                <renovacao></renovacao>
+                <validade></validade>
+            </registro-cnen>
+        </supervisor-protecao-radiologica-substituto>
+        <equipamento tipo="">
+            <componente tipo="Geral">
+                <fabricante></fabricante>
+                <modelo></modelo>
+                <serie></serie>
+                <registro-anvisa></registro-anvisa>
+                <data-fabricacao></data-fabricacao>
+            </componente>
+            <componente tipo="">
+                <fabricante></fabricante>
+                <modelo></modelo>
+                <serie></serie>
+                <registro-anvisa></registro-anvisa>
+                <data-fabricacao></data-fabricacao>
+            </componente>
+        </equipamento>
+    </servico>
+</estabelecimento>
+
+<estabelecimento cpf-cnpj="90.863.366/0001-87" cnes="2707993" razao-social="Associação Hospital de Caridade de Alecrim" nome-fantasia="Hospital de Caridade de Alecrim">
+    <endereco>
+        <logradouro>Rua Osvaldo Cruz</logradouro>
+        <numero>215</numero>
+        <bairro>Centro</bairro>
+        <complemento></complemento>
+        <municipio>Alecrim/RS</municipio>
+        <cep>98950-000</cep>
+        <telefone>(55) 3546-1212</telefone>
+        <email>nerisava@yahoo.com.br</email>
+    </endereco>
+    <servico tipo="Serviço de Radiologia Convencional">
+        <cnae>8640-2/05 Serviços de diagnóstico por imagem com uso de radiação ionizante, exceto tomografia</cnae>
+        <alvara-sanitario>
+            <protocolo>23200000026318</protocolo>
+            <codigo-cevs>430030788-864-000010-1-5</codigo-cevs>
+            <validade>26/01/2024</validade>
+            <qr-code></qr-code>
+        </alvara-sanitario>
+        <responsavel-legal>
+            <nome>Ildo Stasiak</nome>
+            <cpf>411.117.880-49</cpf>
+        </responsavel-legal>
+        <responsavel-tecnico>
+            <nome>José Ubirajara Pereira da Silva</nome>
+            <cpf>231.511.880-8</cpf>
+            <registro-profissional>CRM 7106-RS</registro-profissional>
+        </responsavel-tecnico>
+        <responsavel-tecnico-substituto>
+            <nome></nome>
+            <cpf></cpf>
+            <registro-profissional></registro-profissional>
+        </responsavel-tecnico-substituto>
+        <supervisor-protecao-radiologica>
+            <nome></nome>
+            <cpf></cpf>
+            <registro-profissional></registro-profissional>
+            <registro-cnen>
+                <registro></registro>
+                <credenciamento></credenciamento>
+                <renovacao></renovacao>
+                <validade></validade>
+            </registro-cnen>
+        </supervisor-protecao-radiologica>
+        <supervisor-protecao-radiologica-substituto>
+            <nome></nome>
+            <cpf></cpf>
+            <registro-profissional></registro-profissional>
+            <registro-cnen>
+                <registro></registro>
+                <credenciamento></credenciamento>
+                <renovacao></renovacao>
+                <validade></validade>
+            </registro-cnen>
+        </supervisor-protecao-radiologica-substituto>
+        <equipamento tipo="Raio X Convencional">
+            <componente tipo="Geral">
+                <fabricante>Siemens</fabricante>
+                <modelo>Multix B</modelo>
+                <serie>2081</serie>
+                <registro-anvisa>10345162042</registro-anvisa>
+                <data-fabricacao>2022</data-fabricacao>
+            </componente>
+            <componente tipo="Colimador">
+                <fabricante>Ralco</fabricante>
+                <modelo>R 302/A</modelo>
+                <numero-modelo>R 302/A DHHS</numero-modelo>
+                <serie>2116161</serie>
+                <filtracao-inerente>2 mm Al</filtracao-inerente>
+                <registro-anvisa></registro-anvisa>
+                <data-fabricacao></data-fabricacao>
+            </componente>
+            <componente tipo="Cabeçote">
+                <fabricante></fabricante>
+                <modelo></modelo>
+                <serie>618222113</serie>
+                <registro-anvisa></registro-anvisa>
+                <data-fabricacao></data-fabricacao>
+            </componente>
+        </equipamento>
+        <equipamento tipo="Digitalizador de Imagens Radiográficas (CR)">
+            <componente tipo="Geral">
+                <fabricante>AGFA</fabricante>
+                <modelo>CR 15-X</modelo>
+                <serie>91479</serie>
+                <registro-anvisa></registro-anvisa>
+                <data-fabricacao>Julho / 2021</data-fabricacao>
+            </componente>
+        </equipamento>
+        <equipamento tipo="Impressora">
+            <componente tipo="Geral">
+                <fabricante>AGFA</fabricante>
+                <modelo>Drystar 5302</modelo>
+                <serie></serie>
+                <registro-anvisa></registro-anvisa>
+                <data-fabricacao></data-fabricacao>
+            </componente>
+        </equipamento>
+        <equipamento tipo="Monitor para Laudos (Telerradiologia)">
+            <componente tipo="Geral">
+                <fabricante></fabricante>
+                <modelo></modelo>
+                <serie></serie>
+                <registro-anvisa></registro-anvisa>
+                <data-fabricacao></data-fabricacao>
+            </componente>
+        </equipamento>
+    </servico>
+</estabelecimento>
+
+</cadastro>

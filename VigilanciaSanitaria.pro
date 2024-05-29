@@ -10,17 +10,20 @@ CONFIG += c++17
 
 SOURCES += \
     customcheckbox.cpp \
+    icones.cpp \
     main.cpp \
     mainwindow.cpp \
     relatorioinsp_radiologiamedica.cpp
 
 HEADERS += \
     customcheckbox.h \
+    icones.h \
     mainwindow.h \
     relatorioinsp_radiologiamedica.h
 
 FORMS += \
     customcheckbox.ui \
+    icones.ui \
     mainwindow.ui \
     relatorioinsp_radiologiamedica.ui
 
@@ -31,3 +34,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     resources.qrc
+
+RC_ICONS = imagens/RadShield-Ico.ico
+
+DISTFILES +=

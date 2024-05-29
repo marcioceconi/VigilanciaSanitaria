@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>801</width>
     <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Vigilância Sanitária</string>
+   <string>SCIECONI - Vigilância Sanitária - Setor de Radiações</string>
   </property>
   <property name="windowIcon">
    <iconset resource="resources.qrc">
@@ -29,7 +29,7 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>780</width>
+         <width>781</width>
          <height>503</height>
         </rect>
        </property>
@@ -43,7 +43,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>801</width>
      <height>22</height>
     </rect>
    </property>
@@ -143,12 +143,15 @@
     </property>
     <addaction name="actionCadastroEstabelecimentos"/>
     <addaction name="actionCadastroVigilanciaSanitaria"/>
+    <addaction name="separator"/>
+    <addaction name="actionAtividadesEconomicasCNAE"/>
    </widget>
    <widget class="QMenu" name="menuConfigura_es">
     <property name="title">
      <string>Configurações</string>
     </property>
     <addaction name="actionAlterarIcones"/>
+    <addaction name="actionResetar_Layout"/>
    </widget>
    <widget class="QMenu" name="menuSobre">
     <property name="title">
@@ -225,6 +228,10 @@
    <addaction name="actionSair"/>
   </widget>
   <action name="actionSobre">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/RadShield-Ico.ico</normaloff>:/imagens/RadShield-Ico.ico</iconset>
+   </property>
    <property name="text">
     <string>Sobre</string>
    </property>
@@ -239,6 +246,10 @@
    </property>
   </action>
   <action name="actionLicenca">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-document.png</normaloff>:/imagens/icon-document.png</iconset>
+   </property>
    <property name="text">
     <string>Licença</string>
    </property>
@@ -261,7 +272,7 @@
      <normaloff>:/imagens/icon-new-file.png</normaloff>:/imagens/icon-new-file.png</iconset>
    </property>
    <property name="text">
-    <string>Radiologia Médica</string>
+    <string>Relatório de Inspeção em Radiologia Médica</string>
    </property>
    <property name="toolTip">
     <string>Relatório de Inspeção em Radiologia Médica</string>
@@ -273,7 +284,7 @@
      <normaloff>:/imagens/icon-new-file.png</normaloff>:/imagens/icon-new-file.png</iconset>
    </property>
    <property name="text">
-    <string>Radiologia Odontológica</string>
+    <string>Relatório de Inspeção em Radiologia Odontológica</string>
    </property>
    <property name="toolTip">
     <string>Relatório de Inspeção em Radiologia Odontológica</string>
@@ -285,7 +296,7 @@
      <normaloff>:/imagens/icon-new-file.png</normaloff>:/imagens/icon-new-file.png</iconset>
    </property>
    <property name="text">
-    <string>Radioterapia</string>
+    <string>Relatório de Inspeção em Radioterapia</string>
    </property>
    <property name="toolTip">
     <string>Relatório de Inspeção em Radioterapia</string>
@@ -297,7 +308,7 @@
      <normaloff>:/imagens/icon-new-file.png</normaloff>:/imagens/icon-new-file.png</iconset>
    </property>
    <property name="text">
-    <string>Medicina Nuclear</string>
+    <string>Relatório de Inspeção em Medicina Nuclear</string>
    </property>
    <property name="toolTip">
     <string>Relatório de Inspeção em Medicina Nuclear</string>
@@ -555,7 +566,7 @@
      <normaloff>:/imagens/icon-new-file.png</normaloff>:/imagens/icon-new-file.png</iconset>
    </property>
    <property name="text">
-    <string>Hemodinâmica</string>
+    <string>Relatório de Inspeção em Hemodinâmica</string>
    </property>
    <property name="toolTip">
     <string>Relatório de Inspeção em Hemodinâmica</string>
@@ -790,6 +801,20 @@
    </property>
    <property name="text">
     <string>Alterar Ícones</string>
+   </property>
+  </action>
+  <action name="actionResetar_Layout">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-circular-arrows.png</normaloff>:/imagens/icon-circular-arrows.png</iconset>
+   </property>
+   <property name="text">
+    <string>Resetar Layout</string>
+   </property>
+  </action>
+  <action name="actionAtividadesEconomicasCNAE">
+   <property name="text">
+    <string>Atividades Econômicas (CNAE)</string>
    </property>
   </action>
  </widget>

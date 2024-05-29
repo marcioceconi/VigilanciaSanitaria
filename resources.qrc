@@ -34,5 +34,9 @@
         <file>imagens/logotipo.png</file>
         <file>imagens/RadShield-Ico.ico</file>
         <file>imagens/RadShield-Png.png</file>
+        <file>imagens/icon-alert.png</file>
+        <file>imagens/icon-circular-arrows.png</file>
+        <file>imagens/icon-unchecked-square-white.png</file>
+        <file>imagens/icon-checked-square-white.png</file>
     </qresource>
 </RCC>
