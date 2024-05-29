@@ -144,6 +144,8 @@
     <addaction name="actionCadastroEstabelecimentos"/>
     <addaction name="actionCadastroVigilanciaSanitaria"/>
     <addaction name="separator"/>
+    <addaction name="actionRoteirosInspecao"/>
+    <addaction name="separator"/>
     <addaction name="actionAtividadesEconomicasCNAE"/>
    </widget>
    <widget class="QMenu" name="menuConfigura_es">
@@ -362,7 +364,7 @@
   <action name="actionDesfazer">
    <property name="icon">
     <iconset resource="resources.qrc">
-     <normaloff>:/imagens/icons8-undo-96.png</normaloff>:/imagens/icons8-undo-96.png</iconset>
+     <normaloff>:/imagens/icon-undo.png</normaloff>:/imagens/icon-undo.png</iconset>
    </property>
    <property name="text">
     <string>Desfazer</string>
@@ -813,8 +815,21 @@
    </property>
   </action>
   <action name="actionAtividadesEconomicasCNAE">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-banknotes.png</normaloff>:/imagens/icon-banknotes.png</iconset>
+   </property>
    <property name="text">
     <string>Atividades Econômicas (CNAE)</string>
+   </property>
+  </action>
+  <action name="actionRoteirosInspecao">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imagens/icon-checklist.png</normaloff>:/imagens/icon-checklist.png</iconset>
+   </property>
+   <property name="text">
+    <string>Roteiros de Inspeção</string>
    </property>
   </action>
  </widget>

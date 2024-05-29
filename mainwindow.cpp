@@ -139,12 +139,12 @@ void MainWindow::on_actionSobre_triggered()
     const QString sobre = "<p><strong>Versão</strong>: 1.0.0 (Compilado em 26/02/2024)</p>"
                                  "<p>Este <em>software</em> foi desenvolvido pelo Físico <strong>Márcio Ceconi</strong>,"
                                  "da Vigilância Sanitária da 14ª CRS (Santa Rosa), empregando a linguagem de programação "
-                                 "C++, com o <em>framework</em> Qt (versão 6.6.1) e o IDE Qt Creator (versão 12.0.1).</p>"
+                                 "C++, o <em>framework</em> Qt (versão 6.6.1) e o IDE Qt Creator (versão 12.0.1).</p>"
                                  "<p>Para maiores informações, entre em contato com o desenvolvedor:<br>"
                                  "E-mail: <em>marcio-ceconi@saude.rs.gov.br</em><br>"
                                  "Telefone: +55 (055) 3512-5277 ramal 139<br>"
                                  "<em>Whatsapp</em>: +55 (055) 99976-4702</p>"
-                                 "<p>O código-fonte deste <em>software</em> pode ser obtido no GitHub:<br><a href=\"https://github.com/marcioceconi/VigilanciaSanitaria\">https://github.com/marcioceconi/VigilanciaSanitaria</a></p>"
+                                 "<p>O código-fonte deste <em>software</em> está disponível no GitHub:<br><a href=\"https://github.com/marcioceconi/VigilanciaSanitaria\">https://github.com/marcioceconi/VigilanciaSanitaria</a></p>"
                                  "<p>Todos os ícones utilizados neste software foram obtidos de <a href=\"https://icons8.com/\">Icons8</a>, sob a licença \"<a href=\"https://intercom.help/icons8-7fb7577e8170/en/articles/5534926-universal-multimedia-licensing-agreement-for-icons8\"><em>Universal Multimedia License Agreement for Icons8</em></a>\"<br>(<strong><em>Icons by <a href=\"https://icons8.com/\">Icons8</a></em></strong>)</p>";
     QMessageBox::about(this, QString("Sobre este programa"), sobre);
 }

@@ -23,7 +23,6 @@
         <file>imagens/icon-print.png</file>
         <file>imagens/icon-quit.png</file>
         <file>imagens/icon-redo.png</file>
-        <file>imagens/icons8-undo-96.png</file>
         <file>imagens/icon-save.png</file>
         <file>imagens/icon-settings.png</file>
         <file>imagens/icon-sort-down.png</file>
@@ -38,5 +37,7 @@
         <file>imagens/icon-circular-arrows.png</file>
         <file>imagens/icon-unchecked-square-white.png</file>
         <file>imagens/icon-checked-square-white.png</file>
+        <file>imagens/icon-banknotes.png</file>
+        <file>imagens/icon-undo.png</file>
     </qresource>
 </RCC>
